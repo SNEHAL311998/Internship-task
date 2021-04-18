@@ -1,7 +1,7 @@
 <?php
 
 
-require_once 'config.php';
+require_once 'config.php
 $loginUrl = $google_client->createAuthUrl();
 
 $login_attempts = 0;
@@ -18,7 +18,7 @@ if(isset($_SESSION["locked"])){
         $username = $_POST["username"];
         $password = $_POST["password"];
         $login_attempts = $_POST["hidden"];
-        $conn = mysqli_connect("localhost:3303", "root","qawedrtgy1357","userinfo");
+        $conn = mysqli_connect("localhost:3303", "","","");
         $query = "select * from logininfo where username = '$username' and password = '$password'";
         $result = mysqli_query($conn, $query);
         $count = mysqli_num_rows($result);
