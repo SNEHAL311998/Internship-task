@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Global start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #e0e0e0;
+}
+/* Global end */
+
+
+/* index.php start */
+.login{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    color: #09d69c;
+}
+.container{
+    padding: 0;
+}
+.row{
+    background: white;
+    border-radius: 30px;
+    height: 75vh;
+    width: 100%;
+    margin-top: 75px;
+    box-shadow:0 10px 10px rgba(0,0,0,0.1);
+}
+
+.image1{
+    border-top-left-radius: 30px;
+    height: 450px;
+    width: 450px;
+}
+.column-2{
+    padding: 55px;
+}
+.form-row{
+    margin-left: 200px;
+    margin-top: 25px;
+}
+.form-row a:hover{
+    text-decoration: none;
+    color: #09d69c;
+}
+.form-control{
+    width: 500px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    box-shadow: none;
+}
+.form-control:focus{
+    border: 1px solid #09d69c;
+    font-size: 12px;
+    transition: .2s ease-in;
+}
+.btn-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+.btn1{
+    border-radius: 15px;
+    width: 100px;
+    height: 35px;
+    border: 1px solid #09d69c;
+    outline: none;
+}
+.btn1:hover{
+    box-shadow:0 10px 10px rgba(0,0,0,0.1);
+    transition: 0.5s ease;
+    border: 1px solid #09d69c;
+    background: #11f8b7;
+    color:black;
+}
+/* index.php stop */
+/* ------------------------------------------------------------------------------- */
+
+/*--------------------------
+Responsive
+----------------------------*/
+@media(max-width:1200px){
+    .form-control{
+        width:400px;
+    }
+    .btn-1{
+        margin-left: 50px;
+    }
+    .image1{
+        width: 400px;
+        height: 400px;
+    }
+    .form-row{
+        margin-left: 145px;
+    }
+}
+@media(max-width:990px){
+    .form{
+        margin:15px ;
+    }
+    .row{
+        height: 100vh;
+        margin: 0;
+    }
+    .col-lg-5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    .image1{
+        width: 300px;
+        height: 300px;
+    }
+    .col-lg-7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .column-2{
+        padding: 0;
+        height: 300px;
+    }
+    .btn-1{
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    .form-row{
+        margin-top: 0px;
+        margin-left: 160px;
+    }
+    @media(max-width:550px){
+        .container{
+            padding: 0;
+            width: 100%;
+        }
+        .row{
+            margin: 0;
+            padding: 15px;
+            height: 95vh;
+        }
+        .col-lg-5{
+            height: 250px;
+        }
+        .image1{
+            width: 250px;
+            height: 250px;
+        }
+        .form-control{
+            width: 300px;
+        }
+        .form-row{
+            margin-left: 110px;
+        }
+    }
+    @media(max-width: 335px){
+        .form-control{
+            width: 250px;
+        }
+        .form-row{
+            margin-left: 80px;
+        }
+    }
+}
